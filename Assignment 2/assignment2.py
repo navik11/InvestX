@@ -12,11 +12,6 @@ from keras.layers import LSTM
 
 print("Loading...")
 
-ticker = "TSLA"
-# df = yfinance.download(ticker, period="1y")
-# df.to_csv("Train.csv")
-
-
 df = pd.read_csv('Train.csv')
 # print(df.head())
 df = df.head(150)
